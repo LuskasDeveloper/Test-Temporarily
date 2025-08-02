@@ -2459,16 +2459,6 @@ AddButton(CmdsTab, {
     end
 })
 
-local section = AddSection(CmdsTab, {"Admin/Programming Local"})
-
-AddButton(CmdsTab, {
-  Name = "Abrir console Dev",
-  Callback = function()
-local StarterGui = game:GetService("StarterGui")
-StarterGui:SetCore("DevConsoleVisible", true)
-  end
-})
-
 -- Obter serviços e jogador local
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
