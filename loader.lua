@@ -10,7 +10,7 @@ local Window = redzlib:MakeWindow({
 
 -- Minimize Button
 Window:AddMinimizeButton({
-    Button = { Image = "rbxassetid://71014873973869", BackgroundTransparency = 0 },
+    Button = { Image = "rbxassetid://76374571518466", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(35, 1) },
 })
 
@@ -22,7 +22,7 @@ local Information = Window:MakeTab({"Informacao", "Home"})
 Information:AddDiscordInvite({
     Name = "@gelo",
     Description = "Copiar",
-    Logo = "rbxassetid://18751483361",
+    Logo = "rbxassetid://76374571518466",
     Invite = "@todistraido",
 })
 
