@@ -18,9 +18,9 @@ Tab1:AddDiscordInvite({
     Invite = "Link discord invite",
 })
 
-Window:SelectTab(Tab1)
-
 local Tab1 = Window:MakeTab({"Um", "cherry"})
+
+Window:SelectTab(Tab1)
 
 local Section = Tab1:AddSection({"Section"})
 
