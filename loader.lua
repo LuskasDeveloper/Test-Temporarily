@@ -6,6 +6,8 @@ local Window = redzlib:MakeWindow({
   SaveFolder = "testando | redz lib v5.lua"
 })
 
+Window:SelectTab(Tab1)
+
 Window:AddMinimizeButton({
     Button = { Image = "rbxassetid://71014873973869", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(35, 1) },
@@ -19,8 +21,6 @@ Tab1:AddDiscordInvite({
 })
 
 local Tab1 = Window:MakeTab({"Um", "cherry"})
-
-Window:SelectTab(Tab1)
 
 local Section = Tab1:AddSection({"Section"})
 
