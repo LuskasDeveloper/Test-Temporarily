@@ -25,7 +25,7 @@ Information:AddSection({"Credits"})
 
 Information:AddDiscordInvite({
     Name = "kira",
-    Description = "Are you experiencing problems with the Hub and want to report them? Contact me on discord.",
+    Description = "Are you experiencing problems and want to report them? Contact me on discord.",
     Logo = "rbxassetid://79454992693444",
     Invite = "@todistraido",
 })
