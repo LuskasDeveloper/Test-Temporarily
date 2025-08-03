@@ -3,9 +3,9 @@ local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao1
 
 -- Window
 local Window = redzlib:MakeWindow({
-  Title = " Hub : Brookhaven RP 🏡",
-  SubTitle = " [🇧🇷] Português",
-  SaveFolder = "Gelo | GeloLibrary.lua"
+  Title = "Kira Hub - Brookhaven RP 🏡",
+  SubTitle = " English",
+  SaveFolder = "Kira | KiraLibrary.lua"
 })
 
 -- Minimize Button
@@ -19,13 +19,13 @@ Window:SelectTab(Tab1)
 -- Tab - Information
 local Information = Window:MakeTab({"Informação", "Home"})
 
-Information:AddSection({"Informação"})
+Information:AddSection({"Information"})
 
 Information:AddSection({"Credits"})
 
 Information:AddDiscordInvite({
-    Name = "@gelo",
-    Description = "Copiar",
+    Name = "gelo",
+    Description = "Are you experiencing problems with the Hub and want to report them? Contact me on discord.",
     Logo = "rbxassetid://91861614925309",
     Invite = "@todistraido",
 })
