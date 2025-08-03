@@ -3,8 +3,8 @@ local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao1
 
 -- Window
 local Window = redzlib:MakeWindow({
-  Title = "Gelo Hub",
-  SubTitle = " Brookhaven RP 🏡",
+  Title = "Gelo Hub : Brookhaven RP 🏡",
+  SubTitle = " [🇧🇷] Português",
   SaveFolder = "Gelo | GeloLibrary.lua"
 })
 
@@ -17,7 +17,7 @@ Window:AddMinimizeButton({
 Window:SelectTab(Tab1)
 
 -- Tab - Information
-local Information = Window:MakeTab({"Informacao", "Home"})
+local Information = Window:MakeTab({"Informação", "Home"})
 
 Information:AddDiscordInvite({
     Name = "@gelo",
@@ -112,7 +112,7 @@ end
         return playerNames
     end
 
-    local killDropdown = Troll:AddDropdown({
+    local killDropdown = TrollPlayer:AddDropdown({
         Name = "Selecionar Jogador",
         Options = getPlayerList(),
         Default = "",
@@ -123,7 +123,7 @@ end
         end
     })
 
-    Troll:AddButton({
+    TrollPlayer:AddButton({
         Name = "Atualizar Player List",
         Callback = function()
             local tablePlayers = Players:GetPlayers()
@@ -148,7 +148,7 @@ end
         end
     })
 
-    Troll:AddButton({
+    TrollPlayer:AddButton({
         Name = "Teleportar até o Player",
         Callback = function()
             if not selectedPlayerName or not Players:FindFirstChild(selectedPlayerName) then
@@ -171,7 +171,7 @@ end
         end
     })
 
-    Troll:AddToggle({
+    TrollPlayer:AddToggle({
         Name = "Spectar Player",
         Default = false,
         Callback = function(value)
@@ -212,7 +212,7 @@ end
 
     local MethodSection = Troll:AddSection({ Name = "Métodos" })
 
-    Troll:AddDropdown({
+    TrollPlayer:AddDropdown({
         Name = "Selecionar Método para Matar",
         Options = {"Couch"},
         Default = "",
@@ -222,7 +222,7 @@ end
         end
     })
 
-    Troll:AddButton({
+    TrollPlayer:AddButton({
         Name = "Matar Player",
         Callback = function()
             if not selectedPlayerName or not Players:FindFirstChild(selectedPlayerName) then
@@ -232,12 +232,10 @@ end
             if methodKill == "Couch" then
                 KillPlayerCouch()
     })
-local Tab = Window:MakeTab({"AUDIOS", "music"})
+local AudiosMusics = Window:MakeTab({"Audios/Músicas", "Music"})
 
--- Create a section
-Tab:AddSection({"Audio Todos os Players"})
+AudiosMusics:AddSection({"Audio Todos os Players"})
 
--- Lista de áudios
 local audios = {
     {Name = "Yamete Kudasai", ID = 108494476595033},
     {Name = "Gritinho", ID = 5710016194},
@@ -265,7 +263,7 @@ local audios = {
 local selectedAudioID
 
 -- Adicionar uma textbox para inserir o ID do áudio
-Tab:AddTextBox({
+AudiosMusics:AddTextBox({
     Name = "Insira o ID do Áudio ou Musica",
     Description = "Digite o ID do áudio",
     PlaceholderText = "ID do áudio...",
@@ -280,9 +278,9 @@ for _, audio in ipairs(audios) do
     table.insert(audioNames, audio.Name)
 end
 
-TrollPlayer:AddDropdown({
+AudiosMusics:AddDropdown({
     Name = "Selecione o Áudio",
-    Description = "Escolha um áudio da lista...",
+    Description = "Escolha um áudio da lista",
     Options = audioNames,
     Default = audioNames[1],
     Flag = "selected_audio",
