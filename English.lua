@@ -1,5 +1,5 @@
 -- Library
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/LuskasDeveloper/Library/refs/heads/main/Library.lua"))()
 
 -- Window
 local Window = redzlib:MakeWindow({
